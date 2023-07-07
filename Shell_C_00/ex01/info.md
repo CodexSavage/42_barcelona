@@ -31,7 +31,7 @@ El valor de salida por pantalla si ejecutamos el el script es el siguiente:
 
 El valor que vemos por pantalla se debe gracias al paramétro que especificamos en el print `%d`, el cual nos imprime valores enteros con signo. Como vimos anteriormente a cada uno de los carácteres se los asocia un número concreto al cuál hacen referencia, esto se puede consulitar en la conocida [tabla ASCII ](https://elcodigoascii.com.ar/). Ahora bien si sólo quisiéramos imprimir el valor como "a" sustituiríamos el valor de `%d` por `%c`.
 
-```
+
 
 ## STRING
 
@@ -46,6 +46,8 @@ int main(){
 	print ("%s", w)
 
 }
+
+```
 
 El valor de slida por pantalla si ejecutamos el script es el siguiente:
 
@@ -63,7 +65,7 @@ En estos casos al utilizar la variable tipo string, le estamos diciendo al siste
 
 > **Nota:** aunque se emplee bien el térmmino de `' '` con char, sólo leerá el primer carácter. Si por ejemplo tenemos `char r = "libro"`, nos saldrá un error y nos dirá que el tamaño es demasiado largo.
 
-```
+
 
 ## Explicación
 
