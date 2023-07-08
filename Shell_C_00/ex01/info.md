@@ -41,9 +41,8 @@ El valor que vemos por pantalla se debe gracias al paramétro que especificamos 
 
 int main(){
 	
-	string w 
-	w = "file"
-	print ("%s", w)
+	char w[] = "file";
+	printf("%s", w);
 
 }
 
@@ -59,7 +58,7 @@ file
 
 ```
 
-En estos casos al utilizar la variable tipo string, le estamos diciendo al sistema que queremos imprimir un conjunto de carácteres. Estos no son nada más que múltiples char agrupados entre sí.
+En estos casos al utilizar la variable tipo array char, le estamos diciendo al sistema que queremos imprimir un conjunto de carácteres. Estos no son nada más que múltiples char agrupados entre sí.
 
 > **Nota** si queremos emplear " " en variables tipo char no funcionaará ya que es como intentar guardar un string en char, aunque sea así `char r = "a"`, no funcionará ya que el simple hecho de que este `" "`, le da conocer al sistema que se quiere guardar un conjunto de carácteres.
 
