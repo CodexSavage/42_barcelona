@@ -1,20 +1,22 @@
-# include <stdio.h>
-# include <unistd.h>
+#include <stdio.h>
+#include <unistd.h>
 
-void ft_print_alphabet(void){
-	char word ;
-	word = 'a';
-	while ( word <= 'z' ){
-		write(1, &word, 1);
-		word++;
+void	ft_print_alphabet(void)
+{
+	static char letter = 'a';
+
+	if (letter > 'z')
+	{
+		write(1, "\n", 1);
+		return ;
 	}
-	char r = 'b';
-	printf("\n%c", r);
-	//printf( "\n%d", r );
+	write(1, &letter, 1);
+	letter++;
+	ft_print_alphabet();
 }
 
-int main(){
-
+int	main(void)
+{
 	ft_print_alphabet();
-	return 0;
+	return (0);
 }
